@@ -1,3 +1,3 @@
 ***Based on <https://ironsoftware.com/examples/print-with-dialog/>***
 
-Use the `ShowPrintDialog` method to open the print settings dialog before initiating the document print process. This method is useful for displaying a graphical user interface for print configurations.
+Utilize the `ShowPrintDialog` method for presenting a configurable settings dialog prior to document printing. This feature is particularly useful for offering graphical user interface options for print configuration.

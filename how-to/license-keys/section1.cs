@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.LicenseKeys
+namespace IronPrint.Examples.HowTo.LicenseKeys
 {
-    public class Section1
+    public static class Section1
     {
-        public void Run()
+        public static void Run()
         {
             IronPrint.License.LicenseKey = "IRONPRINT.MYLICENSE.KEY.1EF01";
         }

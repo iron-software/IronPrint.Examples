@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.Quickstart
+namespace IronPrint.Examples.Overview.Quickstart
 {
-    public class Section1
+    public static class Section1
     {
-        public void Run()
+        public static void Run()
         {
             IronPrint.License.LicenseKey = "IRONPRINT.MYLICENSE.KEY.1EF01";
         }

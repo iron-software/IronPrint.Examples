@@ -3,44 +3,40 @@
 ***Based on <https://ironsoftware.com/how-to/print-settings/>***
 
 
-Print settings are a group of options that control the specifics of how content is printed. These parameters include aspects such as the size and orientation of the paper, printing resolution measured in DPI (dots per inch), the number of copies to be printed, which printer to use, margins, and whether to print in color or grayscale. These settings are adjustable, catering to diverse printing needs and preferences.
+Print settings constitute a configuration or a group of parameters that guide the way documents or content are printed. These settings encompass a variety of aspects such as paper size, orientation (e.g., portrait or landscape), print resolution (dots per inch - DPI), number of copies, printer choice, and margins, plus options for grayscale printing. Users can adjust these settings to suit specific printing needs.
 
-## Adjusting Print Settings
+### Getting Started with IronPrint
 
-To tailor print settings, you need to create an instance of the `PrintSettings` class and set your desired parameters. When calling the `Print` or `ShowPrintDialog` methods, include the configured `PrintSettings` instance as an argument. The following code snippet demonstrates how to adjust and apply print settings:
+---
+
+## Configuring Print Settings
+
+To set up print settings, create an instance of the `PrintSettings` class and tailor it as desired. When using the `Print` or `ShowPrintDialog` methods, supply the `PrintSettings` object as the second argument. The below code snippet showcases how this can be done.
 
 ```cs
 using IronPrint;
-namespace ironprint.PrintSettings
-{
-    public class Section1
-    {
-        public void Run()
-        {
-            // Initialization of print settings
-            PrintSettings settings = new PrintSettings();
-            settings.Dpi = 150;
-            settings.NumberOfCopies = 2;
-            settings.PaperOrientation = PaperOrientation.Portrait;
-            
-            // Executing the print command
-            Printer.Print("newDoc.pdf", settings);
-        }
-    }
-}
+
+// Setup of the print settings
+PrintSettings settings = new PrintSettings();
+settings.Dpi = 150;
+settings.NumberOfCopies = 2;
+settings.PaperOrientation = PaperOrientation.Portrait;
+
+// Document printing process
+Printer.Print("newDoc.pdf", settings);
 ```
 
-## Options for Print Settings
+## Summary of Print Settings
 
-Here are the settings you can manage within your print configurations:
+Below is a rundown of all the print settings that you can customized:
 
-- **DefaultSettings**: Creates a new instance of the `PrintSettings` class, populated with default settings.
-- **PaperSize**: Determines the size of paper the printer will use. This typically defaults to `IronPrint.PaperSize.PrinterDefault`.
-- **PaperOrientation**: Defines whether the paper should be in Portrait or Landscape orientation. By default, it is set to `PaperOrientation.Portrait`.
-- **Dpi**: Sets the printing resolution in DPI. The standard default is 300 DPI, which is typical for high-quality print jobs. However, the printer's capability may limit the actual DPI.
-- **NumberOfCopies**: Specifies how many copies of the document should be printed. While the default is typically one copy, not all platforms can necessarily support multiple copies, and sometimes only one copy will be printed despite a higher number set.
-- **PrinterName**: Indicates the printer to use. If left as null, the system's default printer is selected. To select a printer manually, options are retrievable via `IronPrint.Printer.GetPrinterNames` or its asynchronous counterpart.
-- **PaperMargins**: Configures the printing margins in millimeters. If set to null, the printer defaults are applied.
-- **Grayscale**: Decides whether printing will be in grayscale. Color printing is the default unless set to true.
-- **Flatten**: Before printing, determines if the PDF should be flattened. This is helpful for ensuring that images and field values in forms are printed correctly. Off by default.
-- **Tray**: Selects the specific printer tray to feed paper from. This setting is usually not applied if the tray is selected through `PrintDialog`. Trays can be checked using `IronPrint.Printer.GetPrinterTrays` or its asynchronous method. By default, the system tray setting is used, and this feature is only available on Windows systems.
+- **DefaultSettings**: This option provides a new instance of the `IronPrint.PrintSettings` class with preset defaults.
+- **PaperSize**: This setting modifies the paper size used by the printer. By default, it's set to `IronPrint.PaperSize.PrinterDefault`.
+- **PaperOrientation**: This parameter dictates whether the paper orientation should be Portrait or Landscape, with the default set to Portrait.
+- **Dpi**: This represents the desired print resolution, measured in dots per inch. Its default is set at 300 DPI, which is standard for professional printing. Note that the achievable DPI may be constrained by the printer's capabilities.
+- **NumberOfCopies**: This specifies how many identical copies should be printed. The standard setting is one copy. On certain platforms, restrictions may apply that affect this setting, potentially leading to just one copy being printed regardless of the specified number.
+- **PrinterName**: This identifies the printer that should be used for the task. With `null` as the default, the system's default printer is selected. If a printer is chosen via a PrintDialog, this setting is overridden. To fetch a list of printer names, use `IronPrint.Printer.GetPrinterNames` or `IronPrint.Printer.GetPrinterNamesAsync`.
+- **PaperMargins**: This sets the printing margins in millimeters, with `null` indicating default margins provided by the printer.
+- **Grayscale**: This option determines if printing should be done in grayscale, where the default is `false`, meaning printing will try to be done in color.
+- **Flatten**: If set to `true`, flatens the PDF before printing which helps in displaying form fields and images clearly but defaults to `false`.
+- **Tray**: This specifies the printer tray for the paper feed. The default is `null`, indicating the default tray. This property is available only on Windows. If you set a tray via PrintDialog, it will be ignored. Tray options can be checked using `IronPrint.Printer.GetPrinterTrays(System.String)` or `IronPrint.Printer.GetPrinterTraysAsync(System.String)`.

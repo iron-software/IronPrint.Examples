@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using IronPrint;
-namespace ironprint.PrintDocument
+namespace IronPrint.Examples.Tutorial.PrintDocument
 {
-    public class Section4
+    public static class Section4
     {
-        public void Run()
+        public static void Run()
         {
             // Retrieve printers' name
             List<string> printersName = Printer.GetPrinterNames();

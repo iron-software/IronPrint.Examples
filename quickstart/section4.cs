@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.Quickstart
+namespace IronPrint.Examples.Overview.Quickstart
 {
-    public class Section4
+    public static class Section4
     {
-        public void Run()
+        public static void Run()
         {
             // Configure print setting
             PrintSettings printSettings = new PrintSettings();

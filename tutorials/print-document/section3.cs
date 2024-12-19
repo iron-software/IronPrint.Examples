@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.PrintDocument
+namespace IronPrint.Examples.Tutorial.PrintDocument
 {
-    public class Section3
+    public static class Section3
     {
-        public void Run()
+        public static void Run()
         {
             // Configure print setting
             PrintSettings printSettings = new PrintSettings();

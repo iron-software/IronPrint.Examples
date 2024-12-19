@@ -1,107 +1,80 @@
-# Print Document Guide
+# Print Document Tutorial
 
 ***Based on <https://ironsoftware.com/tutorials/print-document/>***
 
 
-IronPrint is a robust library engineered to enable .NET C# developers to easily embed printing functionality within their applications. It is compatible with a wide array of platforms, including Windows, macOS, iOS, and Android, ensuring consistent operation across different operating systems. IronPrint streamlines the addition of print capabilities to your apps, whether they're designed for desktop environments, the Apple macOS sphere, or mobile devices like iOS and Android. This makes IronPrint an all-encompassing, straightforward solution for your .NET C# printing requirements.
+IronPrint is an advanced printing library tailored for .NET C# developers looking to embed printing functionality within their applications. Compatible with Windows, macOS, iOS, and Android, IronPrint delivers consistent performance across various operating systems. Ideal for developing applications for desktops, macOS, iOS, or Android, IronPrint streamlines the integration of printing capabilities into your .NET C# projects, offering a robust and intuitive solution to fulfill all your printing requirements.
+
+<h3>Getting Started with IronPrint</h3>
+
+-------------------------
 
 ## Table of Contents
 
 - **Print Document**
    - [Silent Printing](#anchor-print-silently)
-   - [Interactive Printing with Dialog](#anchor-print-with-dialog)
-- [**Customize Print Settings**](#anchor-apply-print-settings)
-- **Retrieve Printer Details**
-   - [Fetch Printer Names](#anchor-get-printer-names)
+   - [Interactive Printing](#anchor-print-with-dialog)
+- [**Adjusting Print Settings**](#anchor-apply-print-settings)
+- **Printer Details**
+   - [List of Printer Names](#anchor-get-printer-names)
 
 ## Print Document
 
 ### Silent Printing
 
-Execute document printing directly, omitting the print dialog, allowing settings to be applied programmatically.
+Effortlessly print documents without the print dialog appearing, allowing settings to be applied directly in the code.
 
 ```cs
 using IronPrint;
-namespace ironprint.PrintDocument
-{
-    public class Section1
-    {
-        public void Execute()
-        {
-            // Execute printing
-            Printer.Print("newDoc.pdf");
-        }
-    }
-}
+
+// Execute the printing process
+Printer.Print("newDoc.pdf");
 ```
 
-### Interactive Printing with Dialog
+### Interactive Printing
 
-Start the printing process while displaying the settings dialog, letting users modify print options interactively.
+Begin the printing process with a settings dialog, enabling users to modify printing options directly.
 
 ```cs
 using IronPrint;
-namespace ironprint.PrintDocument
-{
-    public class Section2
-    {
-        public void Execute()
-        {
-            // Display print dialog
-            Printer.ShowPrintDialog("newDoc.pdf");
-        }
-    }
-}
+
+// Activate the print dialog
+Printer.ShowPrintDialog("newDoc.pdf");
 ```
 
-## Customize Print Settings
+## Adjusting Print Settings
 
-Adjust the print settings programmatically to fulfill specific requirements. This allows for precise control over the printing parameters.
+Manually tailor print settings to suit specific needs. This functionality supports detailed customization of printing properties via programming.
 
 ```cs
 using IronPrint;
-namespace ironprint.PrintDocument
-{
-    public class Section3
-    {
-        public void Execute()
-        {
-            // Setup print configuration
-            PrintSettings printSettings = new PrintSettings();
-            printSettings.Dpi = 150;
-            printSettings.NumberOfCopies = 2;
-            printSettings.PaperOrientation = PaperOrientation.Portrait;
-            
-            // Execute document printing
-            Printer.Print("newDoc.pdf", printSettings);
-        }
-    }
-}
+
+// Set up printing parameters
+PrintSettings printSettings = new PrintSettings();
+printSettings.Dpi = 150;
+printSettings.NumberOfCopies = 2;
+printSettings.PaperOrientation = PaperOrientation.Portrait;
+
+// Execute printing with specified settings
+Printer.Print("newDoc.pdf", printSettings);
 ```
 
-## Retrieve Printer Details
+## Printer Details
 
-### Fetch Printer Names
+### List of Printer Names
 
-Obtain a catalog of all operational printers. This function gathers the names of printers installed on the system for either informational purposes or to enable dynamic selection in your software.
+Identify and list all printers available. Gather the names of installed printers for selection or informational purposes in your software.
 
 ```cs
+using IronPrint;
+using System;
 using System.Collections.Generic;
-using IronPrint;
-namespace ironprint.PrintDocument
+
+// Fetch names of all printers
+List<string> printersName = Printer.GetPrinterNames();
+
+foreach (var printer in printersName)
 {
-    public class Section4
-    {
-        public void Execute()
-        {
-            // Collect printer names
-            List<string> printersName = Printer.GetPrinterNames();
-            
-            foreach (var printer in printersName)
-            {
-                Console.WriteLine(printer);
-            }
-        }
-    }
+    Console.WriteLine(printer);
 }
 ```

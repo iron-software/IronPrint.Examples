@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.PrintDocument
+namespace IronPrint.Examples.Tutorial.PrintDocument
 {
-    public class Section2
+    public static class Section2
     {
-        public void Run()
+        public static void Run()
         {
             // Show print dialog
             Printer.ShowPrintDialog("newDoc.pdf");

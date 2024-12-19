@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.LicenseKeys
+namespace IronPrint.Examples.HowTo.LicenseKeys
 {
-    public class Section2
+    public static class Section2
     {
-        public void Run()
+        public static void Run()
         {
             // Check if the license key has been applied
             bool licensed = IronPrint.License.IsLicensed;

@@ -1,9 +1,9 @@
 using IronPrint;
-namespace ironprint.Quickstart
+namespace IronPrint.Examples.Overview.Quickstart
 {
-    public class Section3
+    public static class Section3
     {
-        public void Run()
+        public static void Run()
         {
             // Show print dialog
             Printer.ShowPrintDialog("newDoc.pdf");
