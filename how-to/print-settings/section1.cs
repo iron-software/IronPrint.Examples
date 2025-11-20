@@ -5,14 +5,8 @@ namespace IronPrint.Examples.HowTo.PrintSettings
     {
         public static void Run()
         {
-            // Configure print setting
-            PrintSettings printSettings = new PrintSettings();
-            printSettings.Dpi = 150;
-            printSettings.NumberOfCopies = 2;
-            printSettings.PaperOrientation = PaperOrientation.Portrait;
-            
-            // Print the document
-            Printer.Print("newDoc.pdf", printSettings);
+            :title=Print Instantly with Custom Settings
+            IronPrint.Printer.Print("document.pdf", new IronPrint.PrintSettings { PaperSize = IronPrint.PaperSize.A4, PaperOrientation = IronPrint.PaperOrientation.Landscape, Dpi = 300, NumberOfCopies = 2, Grayscale = true });
         }
     }
 }

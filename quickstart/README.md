@@ -3,102 +3,134 @@
 ***Based on <https://ironsoftware.com/docs/docs/>***
 
 
-## IronPrint: Comprehensive Printing Solution for .NET Developers
+## IronPrint: Comprehensive Printing Solution for .NET Applications
 
-**IronPrint** is a robust printing library created by Iron Software, tailored for use across various platforms including Windows, macOS, Android, and iOS.
+**IronPrint** serves as a robust printing library by Iron Software, supporting numerous platforms such as Windows, macOS, Android, and iOS.
 
 ### Compatibility Overview
 
-**IronPrint** offers extensive compatibility across different platforms and .NET versions:
+**IronPrint** offers broad compatibility across various platforms:
 
 #### Supported .NET Versions
 
 - **C#**, **VB.NET**, **F#**
-- Versions **.NET 8, 7**, 6, 5, and Core 3.1+
-- .NET Framework (version 4.6.2 and newer)
+- **.NET 8, 7**, 6, 5, and Core 3.1+
+- .NET Framework (4.6.2+)
 
 #### Supported Operating Systems and Environments
 
-- **Windows** (Version 7 and newer, Server 2016 and later)
-- **macOS** (Version 10 and above)
-- **iOS** (Version 11 and up)
-- **Android** API 21+ (Version 5 "Lollipop" onwards)
+- **Windows** (7+, Server 2016+)
+- **macOS** (10+)
+- **iOS** (11+)
+- **Android** API 21+ (v5 "Lollipop")
 
 #### Supported .NET Project Types
 
-- **Mobile Applications** (using Xamarin, MAUI, and Avalonia)
-- **Desktop Applications** (employing WPF, MAUI, and Windows Avalonia)
-- **Console Applications** (both App and Library types)
+- **Mobile** (Xamarin & MAUI & Avalonia)
+- **Desktop** (WPF & MAUI & Windows Avalonia)
+- **Console** (App & Library)
 
 ## Installation Process
 
-### Setting Up IronPrint Library
+### Getting Started with the IronPrint Library
 
-To install the IronPrint library quickly, execute the following command:
+To install the IronPrint package, use the NuGet Package Manager:
 
 ```shell
-Install-Package IronPrint
+:InstallCmd dotnet add package IronPrint
 ```
 
-Alternatively, you can download it directly from the [official IronPrint NuGet page](https://www.nuget.org/packages/IronPrint).
+You can also download it directly from the [official IronPrint NuGet page](https://www.nuget.org/packages/IronPrint).
 
-Before using the library capabilities, remember to add `using IronPrint;` to the top of your C# source file.
+Begin by importing the library with `using IronPrint;` in your C# source file.
 
-## License Key Activation
+## Activating Your License
 
-Activate your IronPrint library by inserting a valid license or trial key into your project. Assign the key to the `LicenseKey` property of the `License` class immediately following the import directives:
-
-```csharp
-IronPrint.License.LicenseKey = "IRONPRINT.MYLICENSE.KEY.1EF01";
-```
-
-## Programming Examples
-
-### Document Printing
-
-Easily print documents by providing the file path to the `Print` method.
+To activate IronPrint, insert your license or trial key into the `LicenseKey` property of the `License` class right after your imports, before invoking any printing methods:
 
 ```csharp
 using IronPrint;
 
-// Initiates document printing
-Printer.Print("newDoc.pdf");
+// Insert your IronPrint license key below
+License.LicenseKey = "your-license-key-here";
 ```
 
-### Printing with a Dialog
+## Practical Examples
 
-Invoke the `ShowPrintDialog` method to display the print dialog during the print operation.
+### Basic Document Printing
+
+To print a document, simply supply the path of the file to the `Print` method:
 
 ```csharp
 using IronPrint;
 
-// Displays the print dialog before printing
-Printer.ShowPrintDialog("newDoc.pdf");
+class Program
+{
+    static void Main()
+    {
+        // Path to the document to print
+        string filePath = "document.pdf";
+
+        // Call the Print method to start printing
+        IronPrint.Print(filePath);
+    }
+}
+```
+
+### Interactive Print Dialog
+
+For printing with a user confirmation dialog, use the `ShowPrintDialog` method:
+
+```csharp
+using IronPrint;
+
+class Program
+{
+    static void Main()
+    {
+        // Document path for printing
+        string filePath = "document.pdf";
+
+        // Display the print dialog before printing
+        IronPrint.ShowPrintDialog(filePath);
+    }
+}
 ```
 
 ### Customizing Print Settings
 
-Instantiate and configure a `PrintSettings` instance to modify print configurations. Afterwards, pass the object to the print method.
+Customize the printing process by configuring the `PrintSettings` class:
 
 ```csharp
 using IronPrint;
 
-// Configuring the print settings
-PrintSettings printSettings = new PrintSettings();
-printSettings.Dpi = 150;
-printSettings.NumberOfCopies = 2;
-printSettings.PaperOrientation = PaperOrientation.Portrait;
+class Program
+{
+    static void Main()
+    {
+        // Setup printing preferences
+        PrintSettings settings = new PrintSettings
+        {
+            Copies = 2,
+            Duplex = DuplexMode.Vertical,
+            PageOrientation = PageOrientation.Landscape
+        };
 
-// Document printing with customized settings
-Printer.Print("newDoc.pdf", printSettings);
+        // Document path for printing
+        string filePath = "document.pdf";
+
+        // Print the document with customized settings
+        IronPrint.Print(filePath, settings);
+    }
+}
 ```
 
-## Licenses and Support Options
+## Licensing & Support Options
 
-**IronPrint** is a commercially licensed product, albeit it offers free trial licenses available [here](https://ironsoftware.com/trial-license).
+**IronPrint** is a premium library, but free trial licenses are available [here](https://ironsoftware.com/trial-license).
 
-Visit the Iron Software official site for more details: <https://ironsoftware.com/>. For further assistance and queries, please [contact our support](https://ironsoftware.com/#live-chat-support).
+Discover more about Iron Software on our [website](https://ironsoftware.com/) or for assistance, please [reach out to our team](https://ironsoftware.com/contact-us/).
 
-### Providing Support
+### Support Services by Iron Software
 
-For all types of support and technical queries, reach out to us via email at: <support@ironsoftware.com>
+For general inquiries and technical assistance, please contact: <support@ironsoftware.com>.

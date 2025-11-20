@@ -5,7 +5,8 @@ namespace IronPrint.Examples.Overview.Quickstart
     {
         public static void Run()
         {
-            IronPrint.License.LicenseKey = "IRONPRINT.MYLICENSE.KEY.1EF01";
+            // Apply your IronPrint license key here
+            License.LicenseKey = "your-license-key-here";
         }
     }
 }

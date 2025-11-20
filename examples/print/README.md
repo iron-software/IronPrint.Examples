@@ -1,5 +1,11 @@
 ***Based on <https://ironsoftware.com/examples/print/>***
 
-Employ IronPrint for document printing across a variety of operating systems. IronPrint is compatible with Windows, macOS, Linux, Android, and iOS. It is ideally suited for numerous .NET projects such as Avalonia, MAUI, Xamarin (including Xamarin.iOS, Xamarin.Android, and Xamarin.Forms), and WPF.
+## IronPrint: A Comprehensive Cross-Platform Printing Tool
 
-Leverage the `Print` method to send documents to the default printer. Adjust the printer configurations using the **PrintSettings**.
+IronPrint is a dynamic tool that streamlines the process of printing documents across a variety of operating systems, such as Windows, macOS, Linux, Android, and iOS. Ideal for various .NET frameworks, IronPrint is perfectly compatible with Avalonia, MAUI, Xamarin (including Xamarin.iOS, Xamarin.Android, and Xamarin.Forms), and WPF.
+
+### Leveraging the `Print` Method
+
+To dispatch documents to the default printer, employ the `Print` method. This function allows for precise customization of printer preferences through the **`PrintSettings`** object.
+
+[Discover how to effectively tailor Print Settings with IronPrint](https://ironsoftware.com/csharp/print/how-to/print-settings/)

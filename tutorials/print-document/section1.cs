@@ -5,8 +5,8 @@ namespace IronPrint.Examples.Tutorial.PrintDocument
     {
         public static void Run()
         {
-            // Print the document
-            Printer.Print("newDoc.pdf");
+            :title=Print Your Document in One Line – Try IronPrint Now
+            IronPrint.Printer.Print("path/to/your/document.pdf");
         }
     }
 }
