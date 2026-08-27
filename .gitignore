@@ -1,0 +1,48 @@
+# Build output.
+#
+# obj/ in particular must never be committed. NuGet writes the build machine's
+# absolute paths into obj/*.nuget.dgspec.json and obj/project.assets.json, so a
+# committed obj/ leaks local directory structure and pins paths that will not
+# exist in anyone else's clone.
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Java / Maven
+target/
+*.class
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
