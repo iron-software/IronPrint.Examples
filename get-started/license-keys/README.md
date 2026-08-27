@@ -1,6 +1,6 @@
 # Utilizing IronPrint License Keys
 
-***Based on <https://ironsoftware.com/get-started/license-keys/>***
+> Full guide: [Utilizing IronPrint License Keys](https://ironsoftware.com/get-started/license-keys/)
 
 
 ## Acquiring a License Key

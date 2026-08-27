@@ -1,16 +1,15 @@
 # Print Document Tutorial
 
-***Based on <https://ironsoftware.com/tutorials/print-document/>***
+> Full guide: [Print Document Tutorial](https://ironsoftware.com/tutorials/print-document/)
 
 
 IronPrint offers a robust printing library that enables .NET C# developers to easily incorporate printing functionalities into their applications. The library supports multiple platforms including Windows, macOS, iOS, and Android, ensuring consistent and dependable performance across various devices. For developers working on desktop, macOS, or mobile environments using iOS and Android, IronPrint provides a straightforward and effective approach to integrate printing capabilities within the .NET C# framework.
 
-*as-heading:2(Quickstart: Silently Print a Document with IronPrint)*
+## Quickstart: Silently Print a Document with IronPrint
 
 Initiate printing with just a single line of code—no dialogs, no interruptions. Utilize `IronPrint.Printer.Print(...)` to directly send PDFs or images to the printer with either default or tailored settings.
 
 ```cs
-:title=Effortlessly Print Your Document – Explore IronPrint
 IronPrint.Printer.Print("path/to/your/document.pdf");
 ```
 

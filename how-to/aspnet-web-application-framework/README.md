@@ -1,6 +1,6 @@
 # How to Implement Printing in an ASP.NET Web Application
 
-***Based on <https://ironsoftware.com/how-to/aspnet-web-application-framework/>***
+> Full guide: [How to Implement Printing in an ASP.NET Web Application](https://ironsoftware.com/how-to/aspnet-web-application-framework/)
 
 
 Implementing print functionality in web applications often presents practical challenges. While web technologies typically operate asynchronously, print operations are inherently synchronous and can disrupt the seamless user experience. Thankfully, IronPrint offers a powerful solution with its `PrintAsync` method, designed for use in web environments. This tutorial will explore how to employ this functionality within an ASP.NET Core application to enable document printing without blocking the main application flow.
@@ -10,7 +10,6 @@ Implementing print functionality in web applications often presents practical ch
 Jump straight into asynchronous PDF printing with IronPrint's `PrintAsync` API. This concise example below illustrates how you can initiate printing with just a single line in your controller, thus eliminating any interruption to your application's performance.
 
 ```cs
-:title=Print a PDF Asynchronously in Moments
 await IronPrint.Printer.PrintAsync("Basic.pdf");
 ```
 

@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/print-with-dialog/>***
+> Full guide: [Print with dialog](https://ironsoftware.com/csharp/print/examples/print-with-dialog/)
 
 Activate the settings dialog for printing the document using the `ShowPrintDialog` method. This is particularly useful for displaying GUI print settings.
 

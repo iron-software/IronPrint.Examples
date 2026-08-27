@@ -1,6 +1,6 @@
 # Introduction to IronPrint
 
-***Based on <https://ironsoftware.com/docs/docs/>***
+> Docs: [IronPrint documentation](https://ironsoftware.com/csharp/print/docs/)
 
 
 ## IronPrint: Comprehensive Printing Solution for .NET Applications

@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/print/>***
+> Full guide: [Print](https://ironsoftware.com/csharp/print/examples/print/)
 
 ## IronPrint: A Comprehensive Cross-Platform Printing Tool
 
