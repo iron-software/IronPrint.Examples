@@ -1,11 +1,12 @@
+using System.Threading.Tasks;
 using IronPrint;
 namespace IronPrint.Examples.HowTo.AspnetWebApplicationFramework
 {
     public static class Section1
     {
-        public static void Run()
+        public static async Task Run()
         {
-            return await IronPrint.Printer.PrintAsync("Basic.pdf");
+            await IronPrint.Printer.PrintAsync("Basic.pdf");
         }
     }
 }
