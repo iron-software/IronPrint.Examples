@@ -18,11 +18,11 @@ IronPrint.Printer.Print("path/to/your/document.pdf");
 ## Table of Contents
 
 - **Print Document**
-   - [Print Silently](#anchor-print-silently)
-   - [Print With Dialog](#anchor-print-with-dialog)
-- [**Apply Print Settings**](#anchor-apply-print-settings)
+   - [Print Silently](#print-silently)
+   - [Print With Dialog](#print-with-dialog)
+- [**Apply Print Settings**](#apply-print-settings)
 - **Get Printer Information**
-   - [Get Printer Names](#anchor-get-printer-names)
+   - [Get Printer Names](#get-printer-names)
 
 ## Print Document
 
