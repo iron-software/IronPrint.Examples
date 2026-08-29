@@ -1,16 +1,15 @@
 # How to Implement Printing in an ASP.NET Web Application
 
-***Based on <https://ironsoftware.com/how-to/aspnet-web-application-framework/>***
+> Full guide: [How to Implement Printing in an ASP.NET Web Application](https://ironsoftware.com/csharp/print/how-to/aspnet-web-application-framework/)
 
 
-Implementing print functionality in web applications often presents practical challenges. While web technologies typically operate asynchronously, print operations are inherently synchronous and can disrupt the seamless user experience. Thankfully, IronPrint offers a powerful solution with its `PrintAsync` method, designed for use in web environments. This tutorial will explore how to employ this functionality within an ASP.NET Core application to enable document printing without blocking the main application flow.
+Implementing print functionality in web applications often presents practical challenges. While web technologies typically operate asynchronously, print operations are inherently synchronous and can disrupt the user experience. Thankfully, IronPrint offers a powerful solution with its `PrintAsync` method, designed for use in web environments. This tutorial will explore how to employ this functionality within an ASP.NET Core application to enable document printing without blocking the main application flow.
 
 ## Quickstart: Async PDF Printing with IronPrint in ASP.NET
 
 Jump straight into asynchronous PDF printing with IronPrint's `PrintAsync` API. This concise example below illustrates how you can initiate printing with just a single line in your controller, thus eliminating any interruption to your application's performance.
 
 ```cs
-:title=Print a PDF Asynchronously in Moments
 await IronPrint.Printer.PrintAsync("Basic.pdf");
 ```
 
@@ -85,4 +84,4 @@ namespace WebApplication4.Controllers
 }
 ```
 
-By utilizing the `PrintAsync` feature of IronPrint, developers can integrate robust print functionalities into their ASP.NET applications without degrading the user's experience, demonstrating a seamless integration of backend operations with frontend responsiveness.
+By utilizing the `PrintAsync` feature of IronPrint, developers can integrate print functionalities into their ASP.NET applications without degrading the user's experience, demonstrating an integration of backend operations with frontend responsiveness.

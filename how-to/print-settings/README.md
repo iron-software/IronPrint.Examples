@@ -1,6 +1,6 @@
 # Configuring Print Settings
 
-***Based on <https://ironsoftware.com/how-to/print-settings/>***
+> Full guide: [Configuring Print Settings](https://ironsoftware.com/csharp/print/how-to/print-settings/)
 
 
 Print settings comprise a group of parameters used to guide the printing of documents. These parameters may include the paper size, whether to print in portrait or landscape mode, the resolution (measured in DPI), the number of copies, printer preference, margins, and whether the printout should be in grayscale. Adjusting these settings allows users to tailor their print outputs to meet specific requirements.
@@ -10,7 +10,6 @@ Print settings comprise a group of parameters used to guide the printing of docu
 Begin by constructing a `PrintSettings` object and setting basic properties such as paper size, orientation, DPI, number of copies, and grayscale option. Utilize the `Printer.Print(...)` method to instantly apply these configurations without any intricate preparations.
 
 ```cs
-:title=Direct Printing with Configured Settings
 IronPrint.Printer.Print("document.pdf", new IronPrint.PrintSettings {
     PaperSize = IronPrint.PaperSize.A4,
     PaperOrientation = IronPrint.PaperOrientation.Landscape,

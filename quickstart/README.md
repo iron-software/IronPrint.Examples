@@ -1,11 +1,11 @@
 # Introduction to IronPrint
 
-***Based on <https://ironsoftware.com/docs/docs/>***
+> Docs: [IronPrint documentation](https://ironsoftware.com/csharp/print/docs/)
 
 
 ## IronPrint: Comprehensive Printing Solution for .NET Applications
 
-**IronPrint** serves as a robust printing library by Iron Software, supporting numerous platforms such as Windows, macOS, Android, and iOS.
+**IronPrint** serves as a printing library by Iron Software, supporting numerous platforms such as Windows, macOS, Android, and iOS.
 
 ### Compatibility Overview
 

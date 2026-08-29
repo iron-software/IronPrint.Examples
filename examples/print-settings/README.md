@@ -1,4 +1,4 @@
-***Based on <https://ironsoftware.com/examples/print-settings/>***
+> Full guide: [Print settings](https://ironsoftware.com/csharp/print/examples/print-settings/)
 
 Begin by creating an instance of the `PrintSettings` class and modify it as necessary to meet your print requirements. Once configured, use the **PrintSettings** object with any of the available print methods. Detailed descriptions of the different settings available can be found below:
 

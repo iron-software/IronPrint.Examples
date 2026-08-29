@@ -11,7 +11,7 @@ IronPrint is expertly crafted by Iron Software to aid C# developers in managing 
 #### Key Advantages of IronPrint:
 
   * Supports printing with or without user interaction through print dialogs
-  * Intuitive print configuration settings
+ * print configuration settings
 
 #### IronPrint ensures compatibility across multiple platforms:
 
