@@ -93,7 +93,7 @@ File: _appsettings.json_
 
 ### Checking the Applied License Key
 
-To confirm the proper application of your license key, leverage the **IsLicensed** property. The following code snippet aids in this verification:
+To confirm the proper application of your license key, use the **IsLicensed** property. The following code snippet aids in this verification:
 
 ```csharp
 using IronPrint;

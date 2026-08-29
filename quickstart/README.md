@@ -5,7 +5,7 @@
 
 ## IronPrint: Comprehensive Printing Solution for .NET Applications
 
-**IronPrint** serves as a robust printing library by Iron Software, supporting numerous platforms such as Windows, macOS, Android, and iOS.
+**IronPrint** serves as a printing library by Iron Software, supporting numerous platforms such as Windows, macOS, Android, and iOS.
 
 ### Compatibility Overview
 
