@@ -1,4 +1,4 @@
-> Full guide: [Print settings](https://ironsoftware.com/csharp/print/examples/print-settings/)
+> Full guide: [Print settings](https://ironsoftware.com/csharp/print/examples/print-settings/?utm_source=github)
 
 Begin by creating an instance of the `PrintSettings` class and modify it as necessary to meet your print requirements. Once configured, use the **PrintSettings** object with any of the available print methods. Detailed descriptions of the different settings available can be found below:
 
@@ -18,4 +18,4 @@ Begin by creating an instance of the `PrintSettings` class and modify it as nece
 - **`Tray`**: Selects the printer tray for use in the print job.
   - **Remarks**: This setting will be bypassed if a tray is chosen through a PrintDialog. To identify available trays, one can utilize `IronPrint.Printer.GetPrinterTrays(System.String)` or `IronPrint.Printer.GetPrinterTraysAsync(System.String)`. By default, it is set to null, which utilizes the standard tray the printer offers. This tray customization feature is only available in Windows systems.
 
-[Explore Detailed Print Settings Guide with IronPrint](https://ironsoftware.com/csharp/print/how-to/print-settings/)
+[Explore Detailed Print Settings Guide with IronPrint](https://ironsoftware.com/csharp/print/how-to/print-settings/?utm_source=github)
