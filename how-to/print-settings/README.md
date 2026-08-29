@@ -1,6 +1,6 @@
 # Configuring Print Settings
 
-> Full guide: [Configuring Print Settings](https://ironsoftware.com/csharp/print/how-to/print-settings/)
+> Full guide: [Configuring Print Settings](https://ironsoftware.com/csharp/print/how-to/print-settings/?utm_source=github)
 
 
 Print settings comprise a group of parameters used to guide the printing of documents. These parameters may include the paper size, whether to print in portrait or landscape mode, the resolution (measured in DPI), the number of copies, printer preference, margins, and whether the printout should be in grayscale. Adjusting these settings allows users to tailor their print outputs to meet specific requirements.

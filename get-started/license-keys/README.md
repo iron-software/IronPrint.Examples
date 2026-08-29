@@ -1,13 +1,13 @@
 # Utilizing IronPrint License Keys
 
-> Full guide: [Utilizing IronPrint License Keys](https://ironsoftware.com/csharp/barcode/get-started/license-keys/)
+> Full guide: [Utilizing IronPrint License Keys](https://ironsoftware.com/csharp/barcode/get-started/license-keys/?utm_source=github)
 
 
 ## Acquiring a License Key
 
 Activating an IronPrint license key is essential for deploying your application in a live environment without the limitations of watermarks or other restrictions.
 
-You can [purchase a license key here](https://ironsoftware.com/csharp/print/licensing/) or opt for a [free 30-day trial key](https://ironsoftware.com/trial-license).
+You can [purchase a license key here](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or opt for a [free 30-day trial key](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
 --------------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ There are reported issues with license recognition in IronPrint versions before 
 - **ASP.NET** projects
 - **.NET Framework version 4.6.2 and later**
 
-Licenses in a `Web.config` file may not be correctly utilized by the application. For further details, refer to the ['Setting License Key in Web.config'](https://ironsoftware.com/csharp/print/troubleshooting/license-key-web.config/) support guide.
+Licenses in a `Web.config` file may not be correctly utilized by the application. For further details, refer to the ['Setting License Key in Web.config'](https://ironsoftware.com/csharp/print/troubleshooting/license-key-web.config/?utm_source=github) support guide.
 
 Always confirm that `IronPrint.License.IsLicensed` is `true` to ascertain that the license is properly recognized by your application.
 
@@ -133,14 +133,14 @@ A result of **True** indicates the key is valid, allowing the continuous use of 
 
 ## Step 4: Getting Started with Your Project
 
-To kickstart your experience with IronPrint, consider exploring our detailed tutorial available at [Getting Started with IronPrint](https://ironsoftware.com/csharp/print/docs/). This guide provides exhaustive instructions and practical examples for beginners.
+To kickstart your experience with IronPrint, consider exploring our detailed tutorial available at [Getting Started with IronPrint](https://ironsoftware.com/csharp/print/docs/?utm_source=github). This guide provides exhaustive instructions and practical examples for beginners.
 
 --------------------------------------------------------------------------------
 
 ## Questions or Assistance Required?
 
-For successful implementation of IronPrint in your live projects, it's crucial to acquire either a paid license or a trial key, accessible by [purchasing a license](https://ironsoftware.com/csharp/print/licensing/) or through [this link](https://ironsoftware.com/trial-license).
+For successful implementation of IronPrint in your live projects, it's crucial to acquire either a paid license or a trial key, accessible by [purchasing a license](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or through [this link](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
-For an abundant range of code samples, complete tutorials, licensing details, and thorough documentation, make sure to check out the [IronPrint section](https://ironsoftware.com/csharp/print/) on our website.
+For an abundant range of code samples, complete tutorials, licensing details, and thorough documentation, make sure to check out the [IronPrint section](https://ironsoftware.com/csharp/print/?utm_source=github) on our website.
 
 Should you have any inquiries, please don't hesitate to contact <support@ironsoftware.com>.

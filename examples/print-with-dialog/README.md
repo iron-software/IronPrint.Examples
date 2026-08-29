@@ -1,4 +1,4 @@
-> Full guide: [Print with dialog](https://ironsoftware.com/csharp/print/examples/print-with-dialog/)
+> Full guide: [Print with dialog](https://ironsoftware.com/csharp/print/examples/print-with-dialog/?utm_source=github)
 
 Activate the settings dialog for printing the document using the `ShowPrintDialog` method. This is particularly useful for displaying GUI print settings.
 
@@ -12,4 +12,4 @@ Consider the following C# example:
 - **Initiating Printing:** Display the print dialog through `ShowDialog()`. If the user approves the settings by selecting OK, the print job progresses to the printer with `printDocument.Print()`.
 - **`PrintPage` Event:** In the `PrintDocument_PrintPage` event handler, specify the content to be printed on each page utilizing graphic methods like `DrawString` to append text to the page.
 
-[Learn more about customizing print settings with IronPrint](https://ironsoftware.com/csharp/print/how-to/print-settings/).
+[Learn more about customizing print settings with IronPrint](https://ironsoftware.com/csharp/print/how-to/print-settings/?utm_source=github).

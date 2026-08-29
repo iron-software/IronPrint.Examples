@@ -1,6 +1,6 @@
 # Introduction to IronPrint
 
-> Docs: [IronPrint documentation](https://ironsoftware.com/csharp/print/docs/)
+> Docs: [IronPrint documentation](https://ironsoftware.com/csharp/print/docs/?utm_source=github)
 
 
 ## IronPrint: Comprehensive Printing Solution for .NET Applications
@@ -127,9 +127,9 @@ class Program
 
 ## Licensing & Support Options
 
-**IronPrint** is a premium library, but free trial licenses are available [here](https://ironsoftware.com/trial-license).
+**IronPrint** is a premium library, but free trial licenses are available [here](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
-Discover more about Iron Software on our [website](https://ironsoftware.com/) or for assistance, please [reach out to our team](https://ironsoftware.com/contact-us/).
+Discover more about Iron Software on our [website](https://ironsoftware.com/?utm_source=github) or for assistance, please [reach out to our team](https://ironsoftware.com/contact-us/support/?utm_source=github).
 
 ### Support Services by Iron Software
 
