@@ -127,9 +127,9 @@ class Program
 
 ## Licensing & Support Options
 
-**IronPrint** is a premium library, but free trial licenses are available [here](https://ironsoftware.com/trial-license?utm_source=github).
+**IronPrint** is a premium library, but free trial licenses are available [here](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
-Discover more about Iron Software on our [website](https://ironsoftware.com/?utm_source=github) or for assistance, please [reach out to our team](https://ironsoftware.com/contact-us/?utm_source=github).
+Discover more about Iron Software on our [website](https://ironsoftware.com/?utm_source=github) or for assistance, please [reach out to our team](https://ironsoftware.com/contact-us/support/?utm_source=github).
 
 ### Support Services by Iron Software
 

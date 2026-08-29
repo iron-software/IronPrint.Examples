@@ -7,7 +7,7 @@
 
 Activating an IronPrint license key is essential for deploying your application in a live environment without the limitations of watermarks or other restrictions.
 
-You can [purchase a license key here](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or opt for a [free 30-day trial key](https://ironsoftware.com/trial-license?utm_source=github).
+You can [purchase a license key here](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or opt for a [free 30-day trial key](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
 --------------------------------------------------------------------------------
 
@@ -139,7 +139,7 @@ To kickstart your experience with IronPrint, consider exploring our detailed tut
 
 ## Questions or Assistance Required?
 
-For successful implementation of IronPrint in your live projects, it's crucial to acquire either a paid license or a trial key, accessible by [purchasing a license](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or through [this link](https://ironsoftware.com/trial-license?utm_source=github).
+For successful implementation of IronPrint in your live projects, it's crucial to acquire either a paid license or a trial key, accessible by [purchasing a license](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) or through [this link](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license).
 
 For an abundant range of code samples, complete tutorials, licensing details, and thorough documentation, make sure to check out the [IronPrint section](https://ironsoftware.com/csharp/print/?utm_source=github) on our website.
 
