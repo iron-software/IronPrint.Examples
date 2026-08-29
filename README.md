@@ -1,62 +1,58 @@
-![Nuget](https://img.shields.io/nuget/v/IronPrint?color=informational&label=latest)![Installs](https://img.shields.io/nuget/dt/IronPrint?color=informational&label=installs&logo=nuget)![Passed](https://img.shields.io/badge/build-%20%E2%9C%93%20522%20tests%20passed%20(0%20failed)%20-107C10?logo=visualstudio)![windows](https://img.shields.io/badge/%E2%80%8E%20-%20%E2%9C%93-107C10?logo=windows)![macOS](https://img.shields.io/badge/%E2%80%8E%20-%20%E2%9C%93-107C10?logo=apple)![iOS](https://img.shields.io/badge/%E2%80%8E%20-%20%E2%9C%93-107C10?logo=ios)![android](https://img.shields.io/badge/%E2%80%8E%20-%20%E2%9C%93-107C10?logo=android&logoColor=white)[![livechat](https://img.shields.io/badge/Live%20Chat:-24/5-purple?logo=googlechat&logoColor=white)](https://ironsoftware.com/csharp/print/?utm_source=github#helpscout-support)
+# IronPrint.Examples
 
-## IronPrint - Your Premier C# Library for Printing Documents
+Runnable C# examples for [IronPrint](https://ironsoftware.com/csharp/print/?utm_source=github), a .NET printing library that sends PDFs, images, and documents to physical and virtual printers without shelling out to an external viewer.
 
-[![IronPrint NuGet Trial Banner Image](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPrint-readme/nuget-trial-banner.png)](https://ironsoftware.com/csharp/print/?utm_source=github#trial-license)
-
-[Get Started](https://ironsoftware.com/csharp/print/docs/?utm_source=github) | [Tutorials](https://ironsoftware.com/csharp/print/tutorials/print-document/?utm_source=github) | [Code Examples](https://ironsoftware.com/csharp/print/examples/print/?utm_source=github) | [Licensing](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) | [Free Trial](https://ironsoftware.com/csharp/print/docs/?utm_source=github#trial-license)
-
-IronPrint is expertly crafted by Iron Software to aid C# developers in managing print tasks for PDF files and images within .NET environments.
-
-#### Key Advantages of IronPrint:
-
-  * Supports printing with or without user interaction through print dialogs
- * print configuration settings
-
-#### IronPrint ensures compatibility across multiple platforms:
-
-  * Supports .NET Framework 4.6.2 onwards, .NET 3.1 and later versions including .NET 5, 6, 7, and 8
-  * Compatible with Windows, macOS, maccatalyst, iOS, and Android
-
-[![IronPrint Cross Platform Compatibility Support Image](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPrint-readme/cross-platform-compatibility.png)](https://ironsoftware.com/csharp/print/docs/?utm_source=github)
-
-For further details, our [API reference](https://ironsoftware.com/csharp/print/object-reference/api/?utm_source=github) and [comprehensive licensing information](https://ironsoftware.com/csharp/print/licensing/?utm_source=github#trial-license) are readily accessible on our website.
-
-### How to Utilize IronPrint
-
-To integrate IronPrint into your project, simply install the NuGet package using the command:
+## Install
 
 ```bash
-    PM> Install-Package IronPrint
+dotnet add package IronPrint
 ```
 
-After installation, include `using IronPrint;` at the beginning of your C# files. Here is an example to help you get started:
+## Quickstart
 
 ```csharp
-    using IronPrint;
-    
-    // Initiates a print job for a PDF document
-    await IronPrint.Printer.PrintAsync("myDocument.pdf");
-    // Alternatively, display the print dialog
-    await IronPrint.Printer.ShowPrintDialogAsync("myDocument.pdf");
-    
-    // Retrieves a list of available printers
-    var printerList = await IronPrint.Printer.GetPrinterNamesAsync();
+using IronPrint;
+
+License.LicenseKey = "YOUR-LICENSE-KEY";
+
+// Print silently to the default printer
+Printer.Print("invoice.pdf");
 ```
 
-### Features Overview
+`Printer.ShowPrintDialog(path)` prints through the platform dialog instead, and `Printer.GetPrinterNames()` returns the printers the machine can see. To control the job, pass a `PrintSettings` — paper size, orientation, DPI, number of copies, grayscale, and the target printer name.
 
-[![IronPrint Features](https://raw.githubusercontent.com/iron-software/iron-nuget-assets/main/IronPrint-readme/features-table.png)](https://ironsoftware.com/csharp/print/?utm_source=github)
+Without a license key, printed output includes a watermark.
 
-### Licensing & Support Details
+## What's in this repo
 
-Explore more about the product via [IronPrint's home page](https://ironsoftware.com/csharp/print/?utm_source=github).
+Each folder contains a self-contained .NET project you can open and run:
 
-For assistance, contact us directly at support@ironsoftware.com.
+- `examples/` — focused snippets demonstrating individual features
+- `get-started/` — license-key setup
+- `how-to/` — task-oriented guides, including printing from an ASP.NET web application
+- `quickstart/` — an end-to-end project scaffold
+- `tutorials/` — a longer walkthrough covering document printing end to end
 
-### Useful Documentation Links
+## Common tasks covered
 
-  * API Guide : [https://ironsoftware.com/csharp/print/object-reference/api/](https://ironsoftware.com/csharp/print/object-reference/api/?utm_source=github)
-  * Licensing Info : [https://ironsoftware.com/csharp/print/licensing/](https://ironsoftware.com/csharp/print/licensing/?utm_source=github)
+- Silent printing to the default or a named printer
+- Printing through the platform print dialog
+- Enumerating the printers available on the machine
+- `PrintSettings`: paper size, orientation, DPI, number of copies, grayscale, margins
+- Printing PDFs and images
+- Printing from an ASP.NET web application
 
-Reach out to us at support@ironsoftware.com for direct support from our development team for your commercial projects. We provide extensive backing and licensing options for deployment.
+## Platform support
+
+.NET 7, .NET 6, .NET Core 3.1, and .NET Framework 4.6.2+, including the .NET MAUI target frameworks for Windows, macOS, Mac Catalyst, iOS, and Android. See the [documentation](https://ironsoftware.com/csharp/print/docs/?utm_source=github) for environment-specific notes.
+
+## Documentation and support
+
+- Full documentation: [ironsoftware.com/csharp/print/docs](https://ironsoftware.com/csharp/print/docs/?utm_source=github)
+- API reference: [ironsoftware.com/csharp/print/object-reference/api](https://ironsoftware.com/csharp/print/object-reference/api/?utm_source=github)
+- Issues with these examples: file directly on this repository
+- Product support: [support@ironsoftware.com](mailto:support@ironsoftware.com)
+
+## About
+
+This repository is maintained by [Iron Software](https://ironsoftware.com/?utm_source=github). IronPrint is a commercial library — see [licensing](https://ironsoftware.com/csharp/print/licensing/?utm_source=github) for terms and trial details.
